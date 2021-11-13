@@ -13,8 +13,11 @@ Entre ellas están:
 
 - [Pre-requisitos](#pre-requisitos)
 - [Funcionamiento general](#funcionamiento-general) 
+   - [Envio de correos](#envio-de-correos1)
 - [Ejecución por paso de argumentos](#ejecución-por-paso-de-argumentos)
 - [Ejecución por menú](#ejecución-por-menú)
+- [Autores](#autores)
+
 ## Comenzando 🚀
 
 ### Pre-requisitos
@@ -27,7 +30,7 @@ $ pip install -r requirements.txt
 ```
 ## Funcionamiento general
 
-### Envio de correos
+### Envio de correos1
 
 La herramienta de envio de correos, se utiliza para que puedas enviar correos electrónicos con dominio _gmail_, 
 a una o más personas con la posibilidad de adjuntar archivos. El script, trabaja con 3 archivos dados por el usuario  que son:
@@ -198,7 +201,7 @@ $ ./3vil_tool.py -m api --user "ShadowFaxumu" --repository "mirepouwu" --token "
 ```
 
 
-## Autores ✒️
+## Autores
 
 _Con la contribución de:_
 
