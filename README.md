@@ -100,17 +100,66 @@ Por ejemplo:
 $ 3vil_tool.py -m email
 ```
 
-Para ejecutar la herramienta de **Envio de correos**, se tomarán en cuenta los parametros:
+Para ejecutar la herramienta de **Envio de correos**, se tomarán en cuenta los parámetros:
 
-* -json - Que será el path del archivo .json
-* -txt - Que será el path del archivo .txt
-* -file - Que será el path del archivo a adjuntar
+* --email-json - path del archivo .json
+* --email-txt - path del archivo .txt
+* --email-file - path del archivo a adjuntar
 
 Por ejemplo:
 
 ```
-$ 3vil_tool.py -m email --email -json "path del .json" --email -txt "path del .txt" --email file "path del archivo"
+$ 3vil_tool.py -m email --email-json "path del .json" --email-txt "path del .txt" --email-file "path del archivo"
 ```
+
+Para ejecutar la herramienta de **Cifrado de texto**, se tomarán en cuenta los parámetros:
+
+* --language - lenguaje a utilizar para el crackeo, opciones: {en, es}
+* --metodo-cifrado - método de cifrado a utilizar, opciones: {cesar, transposicion}
+* --function - la función a realizar, opciones: {encode, decode, crack}
+* --key - clave para la codificación o decodificación, default = 5
+* --path - path del .txt
+
+Por ejemplo:
+
+```
+$ 3vil_tool.py -m encoding --language "en" --metodo-cifrado "cesar" --function "crack" --path "path del archivo"
+```
+
+Para ejecutar la herramienta de **Escaneo de puertos**, se tomarán en cuenta los parámetros:
+
+* --host - host objetivo 
+* --port - puerto objetivo [Opcional]
+
+Por ejemplo: 
+
+```
+$ 3vil_tool.py -m scan --host "127.0.0.1" --port "22,20,89,130"
+```
+
+Para ejecutar la herramienta de **Obtención de claves HASH**, se tomarán en cuenta los parámetros:
+
+* --hash - tipo de clave HASH a utilizar, opciones: {md5, sha256, sha512}
+* --cifrado - path de algun archivo existente en el sistema
+
+Por ejemplo: 
+
+```
+$ 3vil_tool.py -m hash --hash "md5" --cifrado "path del archivo"
+```
+
+Para ejecutar la herramienta de **Consulta a la API de GitHub**, se tomarán en cuenta los parámetros:
+
+* --user - usuario objetivo en GitHub
+* --repository - nombre del repositorio del usuario objetivo
+* --token - token 0Auth de GitHub generada por tu usuario
+
+Por ejemplo: 
+
+```
+$ 3vil_tool.py -m api --user "ShadowFaxumu" --repository "mirepouwu" --token "12g2hhasba61u16bdha"
+```
+
 ## Autores ✒️
 
 _Con la contribución de:_
