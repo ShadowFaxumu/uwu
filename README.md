@@ -18,8 +18,13 @@ Entre ellas están:
    - [Obtencion de claves HASH](#f-obtención-de-claves-hash)
    - [Consulta a la API de GitHub](#f-consulta-a-la-api-de-github)
    - [Escaneo de puertos](#f-escaneo-de-puertos)
-- [Ejecución por paso de argumentos](#ejecución-por-paso-de-argumentos)
 - [Ejecución por menú](#ejecución-por-menú)
+- [Ejecución por paso de argumentos](#ejecución-por-paso-de-argumentos)
+   - [Envio de correos](#envio-de-correos)
+   - [Cifrado de texto](#cifrado-de-texto)
+   - [Obtencion de claves HASH](#obtención-de-claves-hash)
+   - [Consulta a la API de GitHub](#consulta-a-la-api-de-github)
+   - [Escaneo de puertos](#escaneo-de-puertos)
 - [Autores](#autores)
 
 ## Comenzando 🚀
