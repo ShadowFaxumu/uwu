@@ -75,9 +75,24 @@ C:\Users\Documentos\Archivo.txt
 
 ### Obtención de claves HASH
 
+La herramienta de obtención de claves HASH utiliza 3 métodos de encriptado HASH (md5, sha256 y sha512) para sacar la clave única de algún archivo dado
+por el usuario.
+El script trabaja con 1 archivo dado por el usuario:
+
+* Path absoluto del archivo
+
+Por ejemplo:
+
+```
+C:\Users\Documentos\PIACiberseguridad
+```
+
 ### Consulta a la API de GitHub
 
 ### Escaneo de puertos
+
+La heramienta de escaneo de puerto realiza un escaneo a varios puertos por default de algun host local dado por el usuario y te devuelve los puertos que
+se encontraron abiertos, tiene la opción de especificar que puertos quieres que se escaneen si así lo deseas. 
 
 ## Ejecución
 
@@ -100,6 +115,7 @@ Por ejemplo:
 $ 3vil_tool.py -m email
 ```
 
+### Envio de correos
 Para ejecutar la herramienta de **Envio de correos**, se tomarán en cuenta los parámetros:
 
 * --email-json - path del archivo .json
@@ -112,6 +128,7 @@ Por ejemplo:
 $ 3vil_tool.py -m email --email-json "path del .json" --email-txt "path del .txt" --email-file "path del archivo"
 ```
 
+### Cifrado de texto
 Para ejecutar la herramienta de **Cifrado de texto**, se tomarán en cuenta los parámetros:
 
 * --language - lenguaje a utilizar para el crackeo, opciones: {en, es}
@@ -126,6 +143,7 @@ Por ejemplo:
 $ 3vil_tool.py -m encoding --language "en" --metodo-cifrado "cesar" --function "crack" --path "path del archivo"
 ```
 
+### Escaneo de puertos
 Para ejecutar la herramienta de **Escaneo de puertos**, se tomarán en cuenta los parámetros:
 
 * --host - host objetivo 
@@ -137,6 +155,7 @@ Por ejemplo:
 $ 3vil_tool.py -m scan --host "127.0.0.1" --port "22,20,89,130"
 ```
 
+### Obtención de claves HASH
 Para ejecutar la herramienta de **Obtención de claves HASH**, se tomarán en cuenta los parámetros:
 
 * --hash - tipo de clave HASH a utilizar, opciones: {md5, sha256, sha512}
@@ -148,6 +167,7 @@ Por ejemplo:
 $ 3vil_tool.py -m hash --hash "md5" --cifrado "path del archivo"
 ```
 
+### Consulta a la API de GitHub
 Para ejecutar la herramienta de **Consulta a la API de GitHub**, se tomarán en cuenta los parámetros:
 
 * --user - usuario objetivo en GitHub
