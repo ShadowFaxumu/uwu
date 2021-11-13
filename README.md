@@ -13,7 +13,11 @@ Entre ellas están:
 
 - [Pre-requisitos](#pre-requisitos)
 - [Funcionamiento general](#funcionamiento-general) 
-   - [Envio de correos](#envio-de-correos1)
+   - [Envio de correos](#f-envio-de-correos)
+   - [Cifrado de texto](#f-cifrado-de-texto)
+   - [Obtencion de claves HASH](#f-obtención-de-claves-hash)
+   - [Consulta a la API de GitHub](#f-consulta-a-la-api-de-github)
+   - [Escaneo de puertos](#f-escaneo-de-puertos)
 - [Ejecución por paso de argumentos](#ejecución-por-paso-de-argumentos)
 - [Ejecución por menú](#ejecución-por-menú)
 - [Autores](#autores)
@@ -30,7 +34,7 @@ $ pip install -r requirements.txt
 ```
 ## Funcionamiento general
 
-### Envio de correos1
+### F-Envio de correos
 
 La herramienta de envio de correos, se utiliza para que puedas enviar correos electrónicos con dominio _gmail_, 
 a una o más personas con la posibilidad de adjuntar archivos. El script, trabaja con 3 archivos dados por el usuario  que son:
@@ -68,7 +72,7 @@ Por ejemplo:
 /home/[user]/imagen3.png
 ```
 
-### Cifrado de texto
+### F-Cifrado de texto
 
 La herramienta de cifrado de texto utiliza dos métodos (Cesar y Transposición) para codificar, decodificar y crackear un texto dado en formato .txt, tiene
 la función, para que en tiempo de ejecución, se devuelva el texto ya codificado con el método y llaves indicadas.  
@@ -83,7 +87,7 @@ Por ejemplo:
 /home/[user]/archivo.txt
 ```
 
-### Obtención de claves HASH
+### F-Obtención de claves HASH
 
 La herramienta de obtención de claves HASH utiliza 3 métodos de encriptado HASH (md5, sha256 y sha512) para sacar la clave única de algún archivo dado
 por el usuario.
@@ -97,9 +101,9 @@ Por ejemplo:
 /home/[user]/PIACiberseguridad
 ```
 
-### Consulta a la API de GitHub
+### F-Consulta a la API de GitHub
 
-### Escaneo de puertos
+### F-Escaneo de puertos
 
 La heramienta de escaneo de puerto realiza un escaneo a varios puertos por default de algun host local dado por el usuario y te devuelve los puertos que
 se encontraron abiertos, tiene la opción de especificar que puertos quieres que se escaneen si así lo deseas. 
