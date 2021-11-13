@@ -18,7 +18,24 @@ que no vengan por default en python. Para ello ejecutará el siguiente comando
 ```
 $ pip install -r requirements.txt
 ```
-## Funcionamiento
+## Funcionamiento general
+
+### Envio de correos
+
+La herramienta de envio de correos, se utiliza para que puedas enviar correos electrónicos con dominio _gmail_, 
+a una o más personas con la posibilidad de adjuntar archivos.
+El script, trabaja con 3 archivos dados por el usuario  que son:
+
+* Un archivo .json - Que debe contener la información de la cuenta remitente, con esta estructura:
+
+```
+{
+  "user": "su correo electrónico"
+  "pass: "su contraseña"
+  }
+```
+
+## Ejecución
 
 El script principal es **3v1l_tool.py**, que tiene 2 métodos:
 * Con paso de argumentos
@@ -26,7 +43,23 @@ El script principal es **3v1l_tool.py**, que tiene 2 métodos:
 
 ### Con paso de argumentos
 
-Para ejecutar la herramienta de **Envio de correos**, se tomarán en cuenta:
+Para poder diferenciar entre alguna herramienta y otra se tomará en cuenta el parámetro **_'-m'_**
+
+Donde las opciones son: 
+* _email_ - para envio de correos
+* _encoding_ - para cifrado de texto
+* _hash_ - para obtención de claves HASH
+* _api_ - para consulta a la API de GitHub
+
+Por ejemplo:
+
+```
+$ 3vil_tool.py -m email
+```
+
+Para ejecutar la herramienta de **Envio de correos**, se tomarán en cuenta los parametros:
+
+* -json EMAIL
 
 
 ## Autores ✒️
