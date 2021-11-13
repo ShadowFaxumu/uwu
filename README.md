@@ -1,6 +1,6 @@
 # PIA - 3VIL TOOL
 
-**_3VIL TOOL_** es un programa que contiene herramientras para realizar tareas con relación a ciberseguridad.
+**_3VIL TOOL_** es un programa exclusivo de linux que contiene herramientas para realizar tareas con relación a ciberseguridad.  
 Entre ellas están:
 * [Envio de correos](https://github.com/S4yago/pia-pc/blob/main/envio_de_correos.py)
 * [Consulta a la API de GitHub](https://github.com/S4yago/pia-pc/blob/main/api_github.py)
@@ -8,6 +8,13 @@ Entre ellas están:
 * [Obtención de claves HASH](https://github.com/S4yago/pia-pc/blob/main/claves_hash.py)
 * [Cifrado de texto](https://github.com/S4yago/pia-pc/blob/main/cifrado_de_texto.py)
 
+
+## Contenido
+
+- [Pre-requisitos](#pre-requisitos)
+- [Funcionamiento general](#funcionamiento-general) 
+- [Ejecución por paso de argumentos](#ejecución-por-paso-de-argumentos)
+- [Ejecución por menú](#ejecución-por-menú)
 ## Comenzando 🚀
 
 ### Pre-requisitos
@@ -55,7 +62,7 @@ email c:
 Por ejemplo:
 
 ```
-C:\Users\Documentos\Imagenes\Imagen3.png
+/home/[user]/imagen3.png
 ```
 
 ### Cifrado de texto
@@ -70,7 +77,7 @@ El script trabaja con 1 archivo dado por el usuario:
 
 Por ejemplo:
 ```
-C:\Users\Documentos\Archivo.txt
+/home/[user]/archivo.txt
 ```
 
 ### Obtención de claves HASH
@@ -84,7 +91,7 @@ El script trabaja con 1 archivo dado por el usuario:
 Por ejemplo:
 
 ```
-C:\Users\Documentos\PIACiberseguridad
+/home/[user]/PIACiberseguridad
 ```
 
 ### Consulta a la API de GitHub
@@ -100,7 +107,17 @@ El script principal es **3v1l_tool.py**, que tiene 2 métodos:
 * Con paso de argumentos
 * Por menú
 
-### Con paso de argumentos
+### Ejecución por menú
+
+Si no se pasa ningun parametro al momento de la ejecución del script, automáticamente adoptará una interfaz para que se pueda llevar a cabo la ejecución
+utlizando un menú interactivo
+
+Por ejemplo:
+```
+$ ./3vil_tool.py 
+```
+
+### Ejecución por paso de argumentos
 
 Para poder diferenciar entre alguna herramienta y otra se tomará en cuenta el parámetro **_'-m'_**  
 Donde las opciones son: 
@@ -112,7 +129,7 @@ Donde las opciones son:
 Por ejemplo:
 
 ```
-$ 3vil_tool.py -m email
+$ ./3vil_tool.py -m email
 ```
 
 ### Envio de correos
@@ -125,7 +142,7 @@ Para ejecutar la herramienta de **Envio de correos**, se tomarán en cuenta los 
 Por ejemplo:
 
 ```
-$ 3vil_tool.py -m email --email-json "path del .json" --email-txt "path del .txt" --email-file "path del archivo"
+$ ./3vil_tool.py -m email --email-json "path del .json" --email-txt "path del .txt" --email-file "path del archivo"
 ```
 
 ### Cifrado de texto
@@ -140,7 +157,7 @@ Para ejecutar la herramienta de **Cifrado de texto**, se tomarán en cuenta los 
 Por ejemplo:
 
 ```
-$ 3vil_tool.py -m encoding --language "en" --metodo-cifrado "cesar" --function "crack" --path "path del archivo"
+$ ./3vil_tool.py -m encoding --language "en" --metodo-cifrado "cesar" --function "crack" --path "path del archivo"
 ```
 
 ### Escaneo de puertos
@@ -152,7 +169,7 @@ Para ejecutar la herramienta de **Escaneo de puertos**, se tomarán en cuenta lo
 Por ejemplo: 
 
 ```
-$ 3vil_tool.py -m scan --host "127.0.0.1" --port "22,20,89,130"
+$ ./3vil_tool.py -m scan --host "127.0.0.1" --port "22,20,89,130"
 ```
 
 ### Obtención de claves HASH
@@ -164,7 +181,7 @@ Para ejecutar la herramienta de **Obtención de claves HASH**, se tomarán en cu
 Por ejemplo: 
 
 ```
-$ 3vil_tool.py -m hash --hash "md5" --cifrado "path del archivo"
+$ ./3vil_tool.py -m hash --hash "md5" --cifrado "path del archivo"
 ```
 
 ### Consulta a la API de GitHub
@@ -177,8 +194,9 @@ Para ejecutar la herramienta de **Consulta a la API de GitHub**, se tomarán en 
 Por ejemplo: 
 
 ```
-$ 3vil_tool.py -m api --user "ShadowFaxumu" --repository "mirepouwu" --token "12g2hhasba61u16bdha"
+$ ./3vil_tool.py -m api --user "ShadowFaxumu" --repository "mirepouwu" --token "12g2hhasba61u16bdha"
 ```
+
 
 ## Autores ✒️
 
